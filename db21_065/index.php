@@ -81,7 +81,7 @@ body  {
 <body>
     <nav class="shadow navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #e2d224;"> 
         <div class="container-fluid">
-            <a class="navbar-brand mb-0 h1" href="#">Home Isolation</a>
+            <a class="navbar-brand mb-0 h1" href="?controller=pages&action=home">Home Isolation</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -96,18 +96,21 @@ body  {
                         <a class="nav-link" aria-current="page" href="?controller=hospital&action=index">Hospital</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="?controller=hospital&action=index">Medical Volunteer</a>
+                        <a class="nav-link" aria-current="page" href="?controller=medical&action=index">Medical Volunteer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home Isolation</a>
+                        <a class="nav-link" aria-current="page" href="?controller=home&action=index">Home Isolation</a>
                     </li>
 
                 </ul>
+                <form class="form-inline my-2 my-lg-0">
+      		<a href="http://158.108.207.4/db21/db21_060/?controller=pages&action=home%22%3E" class="btn btn-outline-danger" role="button"><i class="fas fa-sign-in-alt"></i> กลับหน้าหลัก</a>
+    		</form>
             </div>
         </div>
     </nav>
 
-    <?php echo "controller = ".$controller.",action = ".$action;?>
+
     <?php require_once("routes.php");?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"

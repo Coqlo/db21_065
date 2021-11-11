@@ -18,6 +18,7 @@ body  {
   		<div class=" col-md-5 p-lg-5 mx-auto my-5" style="text-align: center;">
     		<h1 class="display-4 font-weight-normal">"Welcome"</h1>
    			 <p class="lead font-weight-normal">ATK to Home Isolation <br>นายธนภัทร โตดิลกเวชช์ รหัสนิสิต 6020550541 </p>
+			<a class=" shadow btn btn-outline-secondary" href="http://158.108.207.4/db21/db21_060/?controller=pages&action=home%22%3E">กลับหน้าหลัก</a>
   		</div>
 </body>
 </html>

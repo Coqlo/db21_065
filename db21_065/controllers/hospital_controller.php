@@ -30,7 +30,7 @@ class HospitalController
     {
         $id = $_GET['hospital_id'];
         $hospital = Hospital::get($id);
-        echo "$hospital->hospital_id , $hospital->hospital_name , $hospital->hospital_address , $hospital->hospital_subArea , $hospital->hospital_area , $hospital->hospital_province , $hospital->hospital_postalCode";
+        
         require_once('views/hospital/updateForm.php');
     }
 
@@ -58,5 +58,11 @@ class HospitalController
         Hospital::delete($hospital_id); //delete quotation
         HospitalController::index();
     }
+    public function search()
+	{
+		$key=$_GET['key'];
+		$HospitalList=Hospital::search($key);
+		require_once('views/hospital/index_hospital.php');
+	}
 }
 ?>

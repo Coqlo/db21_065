@@ -94,7 +94,7 @@ public static function search($key)
 			$HospitalList[]=new Hospital($hospital_id,$hospital_name,$hospital_address,$hospital_subArea,$hospital_area,$hospital_province,$hospital_postalCode);
 		}
 		require("connection_close.php");
-		return $BadmintonList;
+		return $HospitalList;
 }
 
 }
